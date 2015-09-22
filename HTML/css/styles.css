@@ -35,7 +35,7 @@ body {
 	overflow-x: hidden;
 }
 p {
-	color: #D4D0CC;
+	color: #50381F;
 	font-size: 1.4em;
 	font-weight:normal;
 	line-height: 20px;
@@ -452,8 +452,16 @@ section.sliderbox {
 .gallery .title h1 {
 	color:#E96015;
 }
-.gallery .title h3 {
+.gallery .accordion h3 {
 	color:#50381F;
+}
+.gallery a.accordion-toggle {
+    font-size: 2em;
+    color:#E96015;
+    display: block;
+}
+.gallery a.accordion-toggle:hover {
+    text-decoration: underline;
 }
 .grid {
 	margin: 0 auto;
@@ -840,49 +848,60 @@ section.testimonials {
 .information{
     padding-top: 90px;
 }
+.information .app-img-cont{
+    position: relative;
+    top: 3.8em;
+}
 .information h1{
-    color: #263d5a;
+    color: #E96015;
     font-weight: normal;
+    text-align: center;
+}
+.information p{
+    color: #E96015;
+    /*font-size: 2.0em;*/
+    /*line-height: 1.5;*/
+    text-align: justify;
 }
 .information img{
 	width: 100%;
 }
-.information .accordion-group{
+.gallery .accordion-group{
     border-color: transparent;
 }
-.information .accordion-heading{
+.gallery .accordion-heading{
     border: 1px solid #e6e6e6;
     border-radius: 0;
     padding: 10px;
 }
-.information .accordion-inner{
+.gallery .accordion-inner{
     border-color: transparent;
 }
-.information .accordion-toggle{
+.gallery .accordion-toggle{
     color: #1968b5;
     font-size: 16px;
     line-height: 24px;
     font-weight: bold;
 }
-.information .accordion-toggle i{
+.gallery .accordion-toggle i{
     color: #b3b3b3;
     float: right;
     line-height: 24px;
 }
-.information .accordion-heading:hover .accordion-toggle i{
+.gallery .accordion-heading:hover .accordion-toggle i{
     color: #1968b5;
 }
-.information .accordion-inner p{
+.gallery .accordion-inner p{
     color: #818181;
     font-size: 13px;
     line-height: 24px;
     padding: 10px;
 }
-.information .accordion-toggle:hover {
+.gallery .accordion-toggle:hover {
 	color: #fff;
 }
-.information .accordion-heading:hover{
-	background: #0095fc;
+.gallery .accordion-heading:hover{
+	background: #D4D0CC;
 }
 
 
@@ -976,7 +995,7 @@ section.testimonials {
 
 /* Contact ------------------------------------*/
 .contact{
-    background: url("../img/bkg.png");
+    background: #50381F;
     background-size: auto;
     padding-bottom: 0;
     padding-top: 0;
@@ -1083,8 +1102,8 @@ textarea:focus{
 
 /* Footer ------------------------------------*/
 footer {
-	background: #10151c url("../img/envelope.png") center right no-repeat;
-	color:#D4D0CC;
+	background: #D4D0CC;
+	color:#ffffff;
 	padding:60px 0 0 0;
 }
 footer .footer-title {
@@ -1092,10 +1111,13 @@ footer .footer-title {
 	margin: 2% 0 3% 0;
 }
 footer .footer-title i {
-	color: #1968b5;
+	color: #50381F;
 }
 footer h4 {
 	text-transform:uppercase;
+}
+footer .course-form-box .content_form input{
+    background-color: #50381F;
 }
 
 footer ul li span {
@@ -1121,10 +1143,10 @@ footer ul li {
 	border-bottom:1px solid #1c2128;
 }
 footer ul li a{
-	color:#D4D0CC;
+	color:#ffffff;
 }
 footer ul li a:hover{
-	color:#2684df;
+	color:#50381F;
 }
 footer .unstyled{
 	padding: 0;
@@ -1134,7 +1156,7 @@ footer .unstyled{
 /* Coyright ------------------------------------*/
 footer .copyright{
 	margin-top:60px;
-	background: #1a202a;
+	background: #E96015;
 	padding: 30px 0 20px 0;
 	text-align: center;
 }
